@@ -22,7 +22,7 @@ while True:
      
     #now unpack them :)
     iph = unpack('!BBHHHBBH4s4s' , ip_header)
-     
+    
     version_ihl = iph[0]
     version = version_ihl >> 4
     ihl = version_ihl & 0xF
